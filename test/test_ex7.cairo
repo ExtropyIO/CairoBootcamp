@@ -2,7 +2,7 @@
 from starkware.cairo.common.uint256 import Uint256
 from starkware.cairo.common.bitwise import bitwise_and, bitwise_xor
 from starkware.cairo.common.cairo_builtins import BitwiseBuiltin, HashBuiltin
-from exercises.cairo.ex7 import pattern
+from exrx.ex7 import pattern
 
 @external
 func test_patternt{syscall_ptr: felt*, range_check_ptr, bitwise_ptr: BitwiseBuiltin*}() {

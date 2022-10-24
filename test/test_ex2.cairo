@@ -1,5 +1,5 @@
 %lang starknet
-from exercises.cairo.ex2 import add_one, add_one_U256
+from exrx.ex2 import add_one, add_one_U256
 from starkware.cairo.common.uint256 import Uint256, uint256_add
 
 @external
