@@ -1,7 +1,8 @@
 %lang starknet
 
-from exercises.programs.ex_nondeterministic_jumps import sum_positive_sine
 from starkware.cairo.common.alloc import alloc
+
+from exercises.programs.ex_nondeterministic_jumps import sum_positive_sine
 
 @external
 func test_sum_positive_sine{syscall_ptr: felt*, range_check_ptr}() {
