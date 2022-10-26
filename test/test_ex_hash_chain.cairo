@@ -3,7 +3,7 @@
 from starkware.cairo.common.alloc import alloc
 from starkware.cairo.common.cairo_builtins import HashBuiltin
 
-from exrx.ex_hash_chain import hash_chain
+from exercises.programs.ex_hash_chain import hash_chain
 
 @external
 func test_hash_chain{pedersen_ptr: HashBuiltin*}() {

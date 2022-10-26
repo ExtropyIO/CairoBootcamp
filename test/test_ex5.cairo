@@ -1,5 +1,5 @@
 %lang starknet
-from exrx.ex5 import abs_eq
+from exercises.programs.ex5 import abs_eq
 
 @external
 func test_abs_eq{syscall_ptr: felt*, range_check_ptr}() {

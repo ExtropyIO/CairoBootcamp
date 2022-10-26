@@ -1,5 +1,5 @@
 %lang starknet
-from exrx.ex1 import log_value
+from exercises.programs.ex1 import log_value
 
 @external
 func test_log_value{syscall_ptr: felt*, range_check_ptr}() {

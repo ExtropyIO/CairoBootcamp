@@ -1,6 +1,6 @@
 %lang starknet
 
-from exrx.ex_nondeterministic_jumps import sum_positive_sine
+from exercises.programs.ex_nondeterministic_jumps import sum_positive_sine
 from starkware.cairo.common.alloc import alloc
 
 @external

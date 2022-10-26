@@ -1,6 +1,6 @@
 %lang starknet
 
-from exrx.ex_implicit_arguments import implicit_arguments
+from exercises.programs.ex_implicit_arguments import implicit_arguments
 
 @external
 func test_implicit_arguments{syscall_ptr: felt*, range_check_ptr}() {
