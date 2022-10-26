@@ -1,5 +1,3 @@
-// I AM NOT DONE
-
 %lang starknet
 from starkware.cairo.common.bitwise import bitwise_and, bitwise_xor
 from starkware.cairo.common.cairo_builtins import BitwiseBuiltin

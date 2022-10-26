@@ -1,5 +1,3 @@
-// I AM NOT DONE
-
 from starkware.cairo.common.uint256 import Uint256
 
 // Modify both functions so that they increment
