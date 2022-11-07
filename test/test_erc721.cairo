@@ -76,7 +76,7 @@ func test_og_owner{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_p
     let (original_owner) = IERC721.getOriginalOwner(
         contract_address=contract_address, tokenId=Uint256(1, 0)
     );
-    assert_not_equal(original_owner, ow);
+    assert original_owner = MINT_ADMIN;
 
     return ();
 }
