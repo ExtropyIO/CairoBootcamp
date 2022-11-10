@@ -79,7 +79,7 @@ func test_add_member{
 
     // Add Addr_2 to consortium as Addr_1
     %{ stop_prank_callable = start_prank(ids.Addr_1) %}
-    add_member(0, Addr_2, 0, 1, 50);
+    add_member(0, Addr_2, FALSE, 1, 50);
     %{ stop_prank_callable() %}
 
     // Check that Addr_2 added to members array with right parameters
@@ -275,7 +275,7 @@ func test_tally{
 
     // Add member 2 with 50 votes
     %{ stop_prank_callable = start_prank(ids.Addr_1) %}
-    add_member(0, Addr_2, 0, 1, 50);
+    add_member(0, Addr_2, FALSE, 1, 50);
     %{ stop_prank_callable() %}
 
     // Add member 3 with 75 votes
@@ -320,6 +320,7 @@ func test_tally{
     %{ stop_warp = warp(321) %}
     let (ts) = get_block_timestamp();
     let (winner) = tally(0, 0);
+    assert 2 = winner;
     %{ stop_warp(), stop_prank_callable() %}
 
     // read state
